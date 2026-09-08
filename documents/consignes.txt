@@ -9,7 +9,7 @@ CONSIGNES :
       > Le lien READ MORE vers le détails du post
 
     ROUTE DU DETAIL D'UN POST
-    PATTERN: /?postID=x
+    PATTERN: /posts/x/slug
     CTRL: postsControleur
     ACTION: show
       ETAPE 1
@@ -22,13 +22,13 @@ CONSIGNES :
         > Liste des comments + formulaire en POST (vers ?comments=add)
 
     ROUTE DU CONTACT:
-    PATTERN: /?contact
+    PATTERN: /contact
     CTRL: Aucun
     ACTION: Aucune
       > On charge le partial _contact.php
 
     ROUTE DE L'AJOUT D'UN COMMENTAIRE
-    PATTERN: ?comments=add
+    PATTERN: /posts/x/comments/add
     CTRL: commentsControleur.php
     ACTION: store
       > Fait un INSERT dans la table avec les données $_POST
