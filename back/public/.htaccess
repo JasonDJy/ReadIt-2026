@@ -9,10 +9,10 @@ RewriteRule ^ - [L]
 # --------------------------------------------
 # RÈGLES DE RÉ-ÉCRITURE
 
-# ROUTE POSTS.SHOW
-# PATTERN: /posts/id/slug
-# URL: ?posts=show&id=x
-RewriteRule ^posts\/([1-9][0-9]*)\/[a-z0-9]([a-z0-9\-]*[a-z0-9])*$ ?posts=show&id=$1 [L]
+# ROUTE USERS.LOGOUT
+# PATTERN: users/logout
+# URL: ?users=logout
+RewriteRule ^users\/logout$ ?users=logout [L]
 
 # --------------------------------------------
 # FALLBACK

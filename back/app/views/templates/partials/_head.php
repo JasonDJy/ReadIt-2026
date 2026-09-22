@@ -4,6 +4,7 @@
  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
  <meta name="description" content="" />
  <meta name="author" content="" />
+ <base href="<?php echo ADMIN_BASE_URL; ?>">
  <link rel="icon" href="../../favicon.ico" />
 
  <title>BACKOFFICE - <?php echo $title; ?></title>
